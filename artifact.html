@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>December 17, 2024 — Substrate Grimoire</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0d0a08;
+      color: #e8dcc8;
+      font-family: 'IM Fell English', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    /* subtle noise texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .screenshot-wrapper {
+      width: 100%;
+      border: 1px solid #2a2218;
+      box-shadow: 0 0 60px rgba(0,0,0,0.8), 0 0 120px rgba(0,0,0,0.4);
+    }
+
+    .screenshot-wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    .date {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.85rem;
+      color: #8a7a6a;
+      letter-spacing: 0.15em;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      gap: 48px;
+      margin-top: 16px;
+    }
+
+    .nav a {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+      color: #5a4a3a;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #c8b89a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="screenshot-wrapper">
+      <img src="The Moth Conversation.png" alt="ChatGPT 4o conversation — December 17, 2024">
+    </div>
+
+    <div class="date">December 17, 2024 — 5:56 PM</div>
+
+    <nav class="nav">
+      <a href="index.html">← archive</a>
+      <a href="#">forward →</a>
+    </nav>
+
+  </div>
+</body>
+</html>
